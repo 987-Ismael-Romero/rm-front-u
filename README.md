@@ -127,7 +127,7 @@ DisplacementX cuenta con 4 tipos de desplazamiento:
 
 Para tener una mejor vision del funcionamiento puedes basarte en el archivo ExampleDisplacementXY que se encuentra la carpeta src/
 
-<h2 id="DX">La clase rmSliderAutomatic</h2>
+<h2 id="SA">La clase rmSliderAutomatic</h2>
 
 <p>
 Con esta clase nosotros tendremos un Slider Automatico como los que encontramos en las paginas web, la manera de implementarlo es muy sencilla.<br>
