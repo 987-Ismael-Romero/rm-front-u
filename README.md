@@ -21,8 +21,7 @@ rm-front-u esta desarrollodo con la version de Java 11
 
 <h1>¿Como funciona?</h1>
 
-<p>Puedes descargar este repositorio y utilizar las clases de tu preferencia o puedes inclur el jar a tu proyecto. <br>
-El jar podras encontrarlo en la carpeta out/artifacts/rm-front-u/rm-front-u.jar
+<p>Puedes descargar este repositorio y utilizar las clases de tu preferencia.
 </p>
 
 <h2 id="DX">La clase displacementX</h2>
