@@ -16,7 +16,7 @@ rm-front-u esta desarrollodo con la version de Java 11
 <ul>
   <li><a href="#DX">Desplazamientos en X</a></li>
   <li><a href="#DY"> Desplazamientos en Y</a></li>
-  <li>Slider Automatico</li>
+  <li><a href="#SA">Slider Automatico</a></li>
 </ul>
 
 <h1>¿Como funciona?</h1>
@@ -79,7 +79,7 @@ Para tener una mejor vision del funcionamiento puedes basarte en el archivo Exam
 
 <h2 id="DY">La clase displacementY</h2>
 
-<p>Esta clase sigue las mismas bases que que su antecesor DisplacementX por lo que cuentan con ambas caracteristicas</p>
+<p>Esta clase sigue las mismas bases que su antecesor DisplacementX por lo que cuentan con ambas caracteristicas</p>
 <p>Algo importante a tener en cuenta es que esta funcionalidad por el momento no afecta al sistema de layout que utilizes por lo que deberas de manejar esos aspectos individualmente y que ademas esta diseñada para responder a eventos por botonoes por lo que deberas incluir un ActionListener a tu boton.</p>
 
 <h4>Tipos de desplazamiento</h4>
@@ -126,6 +126,60 @@ DisplacementX cuenta con 4 tipos de desplazamiento:
 </p>
 
 Para tener una mejor vision del funcionamiento puedes basarte en el archivo ExampleDisplacementXY que se encuentra la carpeta src/
+
+<h2 id="DX">La clase rmSliderAutomatic</h2>
+
+<p>
+Con esta clase nosotros tendremos un Slider Automatico como los que encontramos en las paginas web, la manera de implementarlo es muy sencilla.<br>
+
+Esta clase lo primero que necesita es el JPanel el cual contendra todos los elementos a mostrar. Cuando nosotros instanciemos la clase lo primero que deberemos de pasar como parametro es JPanel.
+
+JPanel Slide = new JPanel();
+rmSliderAutomatic Slider = new rmSliderAutomatic(Slide);
+
+De este modo nuestro slider ya esta casi listo, lo unico que necitaremos ahora es configurarlo. para ello utilizaremos el metodo confiSlide() que nos permitira definir los intervalos de movimiento y tiempo. La funcion recibe 6 paramatros:
+
+<ul>
+  <li>duration: Define el tiempo que dura el dezplazamiento de A a B y de B a C</li>
+  <li>sleep: Define el tiempo que deseeas que el elemento a mostrar quede visible</li>
+  <li>width: Define el ancho de tu Slider</li>
+  <li>elements: Define la cantidad de elementos que tendra el slider (La calse tiene soporte para 2 o 3 elementos como maximo)</li>
+  <li>XL: Define la posicion de los elementos de tu Slide en X</li>
+  <li>YL: Define la posicion de los elementos de tu Slide en Y</li>
+</ul>
+
+Una vez dicho esto podemos proceder con un ejemplo:
+
+JPanel Slide = new JPanel();
+JPanel Panel1 = new JPanel();
+JPanel Panel2 = new JPanel();
+JPanel Panel3 = new JPanel();
+
+rmSliderAutomatic Slider = new rmSliderAutomatic(Slide);
+
+public void initComponents(){<br>
+  Slider.setSize(2100, 250);//Suponiendo que el JFrame mide 700 pixeles tu panel debera tener 2 o 3 veces su tamaño en ancho segun los elementos a agregar<br>
+  Slider.setLocation(0,0);<br>
+  Slider.setLayout(null);<br>
+  
+  Panel1.setSize(700, 250);<br>
+  Panel1.setLocation(0, 250);<br>
+  Panel2.setSize(700, 250);<br>
+  Panel2.setLocation(700, 250);<br>
+  Panel3.setSize(700, 250);<br>
+  Panel3.setLocation(1400, 250);<br>
+  
+  Slider.add(Panel1);<br>
+  Slider.add(Panel2);<br>
+  Slider.add(Panel3);<br>
+
+  Slider.configSlide(5, 400, 700, 3, 0, 0);<br>
+  this.add(Slider);<br>
+}<br>
+
+Puedes ver este ejemplo en accion ejecutando el archivo ExampleSliderAutomatic que se encuntra en la carpeta src/
+
+</p>
 
 
 
