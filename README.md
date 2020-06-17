@@ -75,4 +75,6 @@ DisplacementX cuenta con 4 tipos de desplazamiento:
    }<br>
 </p>
 
+Para tener una mejor vision del funcionamiento puedes basarte en el archivo ExampleDisplacementXY que se encuentra la carpeta src/
+
 Proximante en la version 2.0.0.5 incluira: SliderManual, Slider Semi-Automatico, e incorporancion de un esquema para cambiar el aspecto de la interfaces a modo oscuro
