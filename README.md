@@ -179,7 +179,3 @@ public void initComponents(){<br>
 Puedes ver este ejemplo en accion ejecutando el archivo ExampleSliderAutomatic que se encuntra en la carpeta src/
 
 </p>
-
-
-
-Proximante en la version 2.0.0.5 incluira: SliderManual, Slider Semi-Automatico, e incorporancion de un esquema para cambiar el aspecto de la interfaces a modo oscuro
